@@ -6,7 +6,7 @@ import com.alibaba.webx.restful.process.RestfulRequestContext;
 
 public class PathParameter extends LiteralParameter implements Parameter {
 
-    public PathParameter(String name, TypeConverter typeConverter, Object defaultValue){
+    public PathParameter(String name, TypeConverter<?> typeConverter, Object defaultValue){
         super(name, typeConverter, defaultValue);
     }
 

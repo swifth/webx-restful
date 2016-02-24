@@ -1,9 +1,9 @@
 package com.alibaba.webx.restful.model.converter;
 
-public class StringConverter implements TypeConverter {
+public class StringConverter implements TypeConverter<String> {
 
     @Override
-    public Object convert(String literalValue) {
+    public String convert(String literalValue) {
         return literalValue;
     }
 

@@ -8,7 +8,7 @@ import com.alibaba.webx.restful.process.RestfulRequestContext;
 
 public class QueryParameter extends LiteralParameter implements Parameter {
 
-    public QueryParameter(String name, TypeConverter typeConverter, Object defaultValue){
+    public QueryParameter(String name, TypeConverter<?> typeConverter, Object defaultValue){
         super(name, typeConverter, defaultValue);
     }
 

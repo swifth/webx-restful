@@ -1,10 +1,10 @@
 package com.alibaba.webx.restful.model.converter;
 
 
-public class DoubleConverter implements TypeConverter {
+public class DoubleConverter implements TypeConverter<Double> {
 
     @Override
-    public Object convert(String literalValue) {
+    public Double convert(String literalValue) {
         return Double.parseDouble(literalValue);
     }
 

@@ -1,10 +1,10 @@
 package com.alibaba.webx.restful.model.converter;
 
 
-public class FloatConverter implements TypeConverter {
+public class FloatConverter implements TypeConverter<Float> {
 
     @Override
-    public Object convert(String literalValue) {
+    public Float convert(String literalValue) {
         return Float.parseFloat(literalValue);
     }
 

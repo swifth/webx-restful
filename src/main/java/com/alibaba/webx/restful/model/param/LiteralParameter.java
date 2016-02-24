@@ -8,10 +8,10 @@ import com.alibaba.webx.restful.process.RestfulRequestContext;
 public abstract class LiteralParameter implements Parameter {
 
     private final String        name;
-    private final TypeConverter typeConverter;
+    private final TypeConverter<?> typeConverter;
     private final Object        defaultValue;
 
-    public LiteralParameter(String name, TypeConverter typeConverter, Object defaultValue){
+    public LiteralParameter(String name, TypeConverter<?> typeConverter, Object defaultValue){
         super();
         this.name = name;
         this.typeConverter = typeConverter;
@@ -35,7 +35,7 @@ public abstract class LiteralParameter implements Parameter {
         return name;
     }
 
-    public TypeConverter getTypeConverter() {
+    public TypeConverter<?> getTypeConverter() {
         return typeConverter;
     }
 

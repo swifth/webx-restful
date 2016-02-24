@@ -2,10 +2,10 @@ package com.alibaba.webx.restful.model.converter;
 
 import com.alibaba.fastjson.util.Base64;
 
-public class ByteArrayConverter implements TypeConverter {
+public class ByteArrayConverter implements TypeConverter<byte[]> {
 
     @Override
-    public Object convert(String literalValue) {
+    public byte[] convert(String literalValue) {
         if (literalValue == null) {
             return null;
         }

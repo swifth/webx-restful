@@ -8,7 +8,7 @@ import com.alibaba.webx.restful.process.RestfulRequestContext;
 
 public class DefaultParameter extends LiteralParameter implements Parameter {
 
-    public DefaultParameter(String name, TypeConverter typeConverter, Object defaultValue){
+    public DefaultParameter(String name, TypeConverter<?> typeConverter, Object defaultValue){
         super(name, typeConverter, defaultValue);
     }
 

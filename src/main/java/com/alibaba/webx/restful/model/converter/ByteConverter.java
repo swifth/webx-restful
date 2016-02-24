@@ -1,10 +1,10 @@
 package com.alibaba.webx.restful.model.converter;
 
 
-public class ByteConverter implements TypeConverter {
+public class ByteConverter implements TypeConverter<Byte> {
 
     @Override
-    public Object convert(String literalValue) {
+    public Byte convert(String literalValue) {
         return Byte.parseByte(literalValue);
     }
 

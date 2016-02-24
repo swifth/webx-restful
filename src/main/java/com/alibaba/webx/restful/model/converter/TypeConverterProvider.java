@@ -5,5 +5,5 @@ import java.lang.reflect.Type;
 
 public interface TypeConverterProvider {
 
-    TypeConverter create(Class<?> clazz, Type type, Annotation[] annotations);
+    TypeConverter<?> create(Class<?> clazz, Type type, Annotation[] annotations);
 }

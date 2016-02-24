@@ -1,9 +1,9 @@
 package com.alibaba.webx.restful.model.converter;
 
-public class ClassConverter implements TypeConverter {
+public class ClassConverter implements TypeConverter<Class<?>> {
 
     @Override
-    public Object convert(String literalValue) throws TypeConvertException {
+    public Class<?> convert(String literalValue) throws TypeConvertException {
         if (literalValue == null) {
             return null;
         }

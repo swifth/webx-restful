@@ -8,7 +8,7 @@ import com.alibaba.webx.restful.process.RestfulRequestContext;
 
 public class HeaderParameter extends LiteralParameter implements Parameter {
 
-    public HeaderParameter(String name, TypeConverter typeConverter, Object defaultValue){
+    public HeaderParameter(String name, TypeConverter<?> typeConverter, Object defaultValue){
         super(name, typeConverter, defaultValue);
     }
 

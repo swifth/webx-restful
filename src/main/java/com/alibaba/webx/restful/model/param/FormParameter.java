@@ -8,7 +8,7 @@ import com.alibaba.webx.restful.process.RestfulRequestContext;
 
 public class FormParameter extends LiteralParameter implements Parameter {
 
-    public FormParameter(String name, TypeConverter typeConverter, Object defaultValue){
+    public FormParameter(String name, TypeConverter<?> typeConverter, Object defaultValue){
         super(name, typeConverter, defaultValue);
     }
 

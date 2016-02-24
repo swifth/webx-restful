@@ -1,10 +1,10 @@
 package com.alibaba.webx.restful.model.converter;
 
 
-public class ShortConverter implements TypeConverter {
+public class ShortConverter implements TypeConverter<Short> {
 
     @Override
-    public Object convert(String literalValue) {
+    public Short convert(String literalValue) {
         return Short.parseShort(literalValue);
     }
 

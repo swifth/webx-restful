@@ -9,7 +9,7 @@ import com.alibaba.webx.restful.process.RestfulRequestContext;
 
 public class CookieParameter extends LiteralParameter implements Parameter {
 
-    public CookieParameter(String name, TypeConverter typeConverter, Object defaultValue){
+    public CookieParameter(String name, TypeConverter<?> typeConverter, Object defaultValue){
         super(name, typeConverter, defaultValue);
     }
 

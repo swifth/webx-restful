@@ -14,8 +14,8 @@ public class TypeConverterProviderImpl implements TypeConverterProvider {
     }
 
     @Override
-    public TypeConverter create(Class<?> clazz, Type type, Annotation[] annotations) {
-        TypeConverter typeConverter;
+    public TypeConverter<?> create(Class<?> clazz, Type type, Annotation[] annotations) {
+        TypeConverter<?> typeConverter;
         if (byte.class == clazz) {
             typeConverter = new ByteConverter();
         } else if (short.class == clazz) {

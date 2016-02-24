@@ -4,7 +4,7 @@ import java.lang.reflect.Type;
 
 import com.alibaba.fastjson.JSON;
 
-public class JSONConverter implements TypeConverter {
+public class JSONConverter implements TypeConverter<Object> {
 
     private final Type type;
 

@@ -100,7 +100,7 @@ public class ParameterProviderImpl implements ParameterProvider {
             return new HttpServletResponseParameter();
         }
 
-        TypeConverter typeConverter = typeConverterProvider.create(paramClass, paramType, annotations);
+        TypeConverter<?> typeConverter = typeConverterProvider.create(paramClass, paramType, annotations);
         Object defaultValue = getDefaultValue(method, defaultValueAnnotation, typeConverter);
 
         if (cookieParam != null) {
@@ -151,7 +151,7 @@ public class ParameterProviderImpl implements ParameterProvider {
         return new DefaultParameter(name, typeConverter, defaultValue);
     }
 
-    private Object getDefaultValue(Member method, DefaultValue defaultValueAnnotation, TypeConverter typeConverter) {
+    private Object getDefaultValue(Member method, DefaultValue defaultValueAnnotation, TypeConverter<?> typeConverter) {
         Object defaultValue = null;
         if (defaultValueAnnotation != null) {
             String defaultLiteralValue = defaultValueAnnotation.value();

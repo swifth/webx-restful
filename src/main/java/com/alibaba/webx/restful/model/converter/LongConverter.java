@@ -1,10 +1,10 @@
 package com.alibaba.webx.restful.model.converter;
 
 
-public class LongConverter implements TypeConverter {
+public class LongConverter implements TypeConverter<Long> {
 
     @Override
-    public Object convert(String literalValue) {
+    public Long convert(String literalValue) {
         return Long.parseLong(literalValue);
     }
 

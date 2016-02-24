@@ -4,12 +4,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class DateConverter implements TypeConverter {
+public class DateConverter implements TypeConverter<Date> {
 
     private String pattern;
 
     @Override
-    public Object convert(String literalValue) throws TypeConvertException {
+    public Date convert(String literalValue) throws TypeConvertException {
         if (literalValue.length() == 0) {
             return null;
         }
